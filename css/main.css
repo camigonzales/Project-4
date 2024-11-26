@@ -1,1 +1,202 @@
-/* Place CSS styles here */
+body {
+  margin: 0;
+  height: 100vh;
+  overflow:hidden;
+  background-color:#FBF3F4;
+  }
+.welcomecontainer {
+  display: flex;
+  width: 300%;
+  height: 100vh;
+  transform: translateX(-100vw);
+  transition: transform 0.5s ease;
+}
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+.mainmenu {
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+  display:flex;
+  overflow:hidden;
+  transition: transform 0.6s ease;
+}
+.cgdesignsside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FBF3F4;
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+.paintedbycamiside{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/pinkstripes.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.cgdesignsside img { 
+  position: absolute;
+  left: 10%;
+  transform: translateY(-50%);
+  top: 50%;
+  max-width: 20%;
+  height: auto;
+  cursor: pointer;
+}
+
+.paintedbycamiside img {
+  position: absolute;
+  right: 10%;
+  transform: translateY(-50%);
+  top: 50%;
+  max-width: 15%;
+  height: auto;
+  cursor: pointer;
+}
+
+.sectionCGdesignsleft{
+  background-color: #FBF3F4;
+}
+
+.cgdesignsmenu{
+  background-color: #FBF3F4;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.cgdesignsmenu img{
+  height:300px;
+}
+
+.sectionpaintedbycamiright {
+  background-image: url(../img/pinkstripes.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  z-index:3;
+}
+
+.paintedbycamimenu{
+  background-image: url(../img/pinkstripes.jpg);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+  
+.menucontainer{
+  display:flex;
+  width:80%;
+  margin:300px;
+  align-items:center;
+  justify-content: space-between;
+}
+.logoside{
+  flex:1;
+  display:flex;
+  justify-content: center;
+}
+.logoside img{
+  width: 300px;
+  object-fit: contain;
+}
+@font-face {
+  font-family: "Sofia";
+  src: url(../font/Sofia-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+.textside{
+  flex:1;
+  display:block;
+  text-align:center;
+  font-family: "Sofia";
+  color:#31610d;
+  font-size:20px;
+}
+.textside a{
+  color: inherit;
+  text-decoration: none;
+}
+.header{
+  background-color:#f8c4db;
+}
+.main-nav{
+  background-color: #f8c4db;
+  padding:20px;
+}
+@media (max-width: 999px) {
+  .main-nav {
+    display: none;
+  }
+}
+.mobile-main-nav {
+display: none;
+flex-direction: column;
+align-items: center;
+background-color:#ffffff;
+position: absolute;
+top: 112px;
+left: 0;
+right: 0;
+}
+.main-nav a {
+color:#234534;
+font-family:Georgia, 'Times New Roman', Times, serif;
+text-decoration:none;
+padding:0 10px;
+align-items:center;
+}
+.main-nav a:hover {
+font-weight: bold;
+font-size: 18px;
+}
+.mobile-main-nav a {
+  padding: 8px;
+  color:#234534;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-decoration:none;
+  margin:12px 0;
+}
+.mobile-main-nav a:hover {
+  font-weight: bold;
+  font-size: 18px;
+}
+@media (min-width: 1000px) {
+  .mobile-nav-wrapper {
+    display: none;
+  }
+}
+.AboutMe{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  height:100vh;
+  width:80%;
+}
+.imageside{
+  flex:1;
+  display:flex;
+  justify-content: center;
+}
+.imageside img{
+  width:300px
+}
+.aboutmetext{
+  flex:1;
+    text-align:center;
+    font-family: "Sofia";
+    color:#31610d;
+    font-size:20px;
+    justify-content:center;
+}
