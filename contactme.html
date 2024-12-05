@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Me</title>
+  <meta name="description" content="This site will serve as a Contact Me form">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <header>
+      <div class="mainnav" id="mainnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="AboutMe.html">About Me</a>
+        <a href="cgdesignsportfolio.html">CG Designs</a>
+        <a href="PaintedbyCamiPortfolio.html">Painted by Cami</a>
+        <a href="contactme.html">Contact Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      </header>
+    <div id="contactform" class="contact-me-form">
+    <form action="thankyou.html">
+        <h4>Contact Me!</h4>
+        <p>Please contact me with any business inquiries!</p>
+        <hr>
+    
+        <label for="name"><b>Name</b></label>
+        <input type="text" id="name" placeholder="Name" name="name" required>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="email" id="email" placeholder="Email" name="email" required>
+    
+        <label for="subject"><b>Subject</b></label>
+        <input type="text" id="subject" placeholder="Subject" name="subject" required>
+        
+        <label for="message"><b>Message</b></label>
+        <textarea id="message" placeholder="Write your message here..." name="message" required></textarea>
+    
+        <div class="form-buttons">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Send</button>
+        </div>
+    </form>
+    </div>
+<script src="js/main.js"></script>
+</body>
+
+</html>
